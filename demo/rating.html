@@ -1,0 +1,18 @@
+<h1>rating</h1>
+<ul class="rating" (mouseleave)="selectTheCurrentRate()">
+  <li [class.selected]="(i <= selectedIndex)" *ngFor="#rating of ratings; #i = index">
+    <button
+      class="btn"
+      type="button"
+      title="{{ rating.title }}"
+      (click)="setRate($event, rating.value)"
+      (mouseenter)="selectUntilIndex(i)"
+      (focus)="selectUntilIndex(i)">
+      <i class="glyphicon glyphicon-heart"></i>
+    </button>
+  </li>
+</ul>
+
+{{ a }}
+
+<p>You rate is: {{ rate }}</p>

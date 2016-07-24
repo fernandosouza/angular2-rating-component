@@ -1,0 +1,19 @@
+.rating {
+  padding: 0;
+}
+
+.rating li {
+  display: inline;
+}
+
+.rating li button {
+  color: #efefef;
+}
+
+.rating li.selected button {
+  color: #c0392b;
+}
+
+.rating .btn {
+  background: transparent;
+}
